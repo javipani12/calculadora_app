@@ -377,11 +377,17 @@ class _HomeScreenState extends State<HomeScreen> {
           // Cada fila contendrá 4 botones y cada botón tendrá asociado cuando se clique en él
           // el método asociado a la función
           //   función     método asociado 
+          const SizedBox(height: 20,),
           Row1(porcentajeFn: porcentaje, limpiarUnValorFn: limpiarUnValor, limpiarTodoFn: limpiarTodo, borrarUnNumeroFn: borrarUnNumero),
+          const SizedBox(height: 20,),
           Row2(funcionesFn: hacerFunciones, elevarA2Fn: elevar, raizCuadradaFn: raizCuadrada, dividirFn: dividir,),
+          const SizedBox(height: 20,),
           Row3(actualizarNum7Fn: actualizarNumero7, actualizarNum8Fn: actualizarNumero8, actualizarNum9Fn: actualizarNumero9, multiplicarFn: multiplicar,),
+          const SizedBox(height: 20,),
           Row4(actualizarN4Fn: actualizarNumero4, actualizarN5Fn: actualizarNumero5,  actualizarN6Fn: actualizarNumero6, restarFn: restar),
+          const SizedBox(height: 20,),
           Row5(actualizarN1Fn: actualizarNumero1, actualizarN2Fn: actualizarNumero2, actulizarN3Fn: actualizarNumero3, sumarFn: sumar),
+          const SizedBox(height: 20,),
           Row6(cambiarSimboloFn: cambiarSimbolo, actualizaN0Fn: actualizarNumero0, annadirDecimalFn: hacerDecimal, resultadoFn: resultado),
         ],
       )
