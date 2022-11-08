@@ -411,10 +411,10 @@ class Row1 extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        FloatingActionButton(child: const Icon(Icons.percent), onPressed: () => porcentajeFn()),
-        FloatingActionButton(child: const Text('CE'), onPressed: () => limpiarUnValorFn() ),
-        FloatingActionButton(child: const Text('C'),onPressed: () => limpiarTodoFn()),
-        FloatingActionButton(child: const Icon(Icons.delete_forever), onPressed: () => borrarUnNumeroFn(),),
+        FloatingActionButton(onPressed: () => porcentajeFn(), backgroundColor: const Color.fromARGB(223, 174, 93, 27), child: const Icon(Icons.percent)),
+        FloatingActionButton(onPressed: () => limpiarUnValorFn(), backgroundColor: const Color.fromARGB(223, 174, 93, 27), child: const Text('CE') ),
+        FloatingActionButton(onPressed: () => limpiarTodoFn(), backgroundColor: const Color.fromARGB(223, 174, 93, 27), child: const Text('C')),
+        FloatingActionButton(onPressed: () => borrarUnNumeroFn(), backgroundColor: const Color.fromARGB(223, 174, 93, 27), child: const Icon(Icons.delete_forever)),
       ],
     );
   }
@@ -436,10 +436,10 @@ class Row2 extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        FloatingActionButton(child: const Text('1/x'), onPressed: () => funcionesFn()),
-        FloatingActionButton(child: const Text('x^2'), onPressed: () => elevarA2Fn()),
-        FloatingActionButton(child: const Text('Raiz2'),onPressed: () => raizCuadradaFn()),
-        FloatingActionButton(child: const Text('/'), onPressed: () => dividirFn()),
+        FloatingActionButton(onPressed: () => funcionesFn(), backgroundColor: const Color.fromARGB(121, 204, 146, 11), child: const Text('1/x'), ),
+        FloatingActionButton(onPressed: () => elevarA2Fn(), backgroundColor: const Color.fromARGB(121, 204, 146, 11), child: const Text('x^2'), ),
+        FloatingActionButton(onPressed: () => raizCuadradaFn(), backgroundColor: const Color.fromARGB(121, 204, 146, 11), child: const Text('Raiz2'), ),
+        FloatingActionButton(onPressed: () => dividirFn(), backgroundColor: const Color.fromARGB(121, 223, 231, 6),child: const Text('/'), ),
       ],
     );
   }
@@ -464,7 +464,7 @@ class Row3 extends StatelessWidget {
         FloatingActionButton(child: const Text('7'), onPressed: () => actualizarNum7Fn()),
         FloatingActionButton(child: const Text('8'), onPressed: () => actualizarNum8Fn() ),
         FloatingActionButton(child: const Text('9'),onPressed: () => actualizarNum9Fn()),
-        FloatingActionButton(child: const Text('X'), onPressed: () => multiplicarFn(),),
+        FloatingActionButton(onPressed: () => multiplicarFn(), backgroundColor: const Color.fromARGB(121, 223, 231, 6),child: const Text('X'), ),
       ],
     );
   }
@@ -489,7 +489,7 @@ class Row4 extends StatelessWidget {
         FloatingActionButton(child: const Text('4'), onPressed: () => actualizarN4Fn() ),
         FloatingActionButton(child: const Text('5'), onPressed: () => actualizarN5Fn() ),
         FloatingActionButton(child: const Text('6'),onPressed: () => actualizarN6Fn() ),
-        FloatingActionButton(child: const Icon(Icons.remove), onPressed: () => restarFn() ),
+        FloatingActionButton(onPressed: () => restarFn(), backgroundColor: const Color.fromARGB(121, 223, 231, 6),child: const Icon(Icons.remove), ),
       ],
     );
   }
@@ -514,7 +514,7 @@ class Row5 extends StatelessWidget {
         FloatingActionButton(child: const Text('1'), onPressed: () => actualizarN1Fn()),
         FloatingActionButton(child: const Text('2'), onPressed: () => actualizarN2Fn() ),
         FloatingActionButton(child: const Text('3'),onPressed: () => actulizarN3Fn() ),
-        FloatingActionButton(child: const Text('+'), onPressed: () => sumarFn() ),
+        FloatingActionButton(onPressed: () => sumarFn(), backgroundColor: const Color.fromARGB(121, 223, 231, 6),child: const Text('+'), ),
       ],
     );
   }
@@ -536,10 +536,10 @@ class Row6 extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        FloatingActionButton(child: const Text('+/-'), onPressed: () => cambiarSimboloFn()),
+        FloatingActionButton(onPressed: () => cambiarSimboloFn(), backgroundColor: const Color.fromARGB(191, 255, 166, 0),child: const Text('+/-'),),
         FloatingActionButton(child: const Text('0'), onPressed: () => actualizaN0Fn()),
-        FloatingActionButton(child: const Text(','),onPressed: () => annadirDecimalFn()),
-        FloatingActionButton(child: const Text('='), onPressed: () => resultadoFn()),
+        FloatingActionButton(onPressed: () => annadirDecimalFn(), backgroundColor: const Color.fromARGB(191, 255, 166, 0),child: const Text(','),),
+        FloatingActionButton(onPressed: () => resultadoFn(), backgroundColor: const Color.fromARGB(224, 145, 34, 34), child: const Text('=')),
       ],
     );
   }
