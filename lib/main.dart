@@ -1,6 +1,8 @@
 import 'package:calculadora/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
+// Aplicación contador 8/11/2022
+
 void main() {
   runApp(const MyApp());
 }
